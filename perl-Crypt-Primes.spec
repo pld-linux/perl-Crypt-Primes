@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define		pdir	Crypt
-%define		pnam	Primes
+%define	pdir	Crypt
+%define	pnam	Primes
 Summary:	Crypt::Primes - provable prime number generator suitable for cryptographic applications
 Summary(pl):	Crypt::Primes - wiarygodny generator liczb pierwszych, nadaj±cy siê do aplikacji kryptograficznych
 Name:		perl-Crypt-Primes
