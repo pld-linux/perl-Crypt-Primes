@@ -1,12 +1,13 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Crypt
 %define		pnam	Primes
-Summary:	Crypt::Primes perl module
-Summary(pl):	Modu³ perla Crypt::Primes
+Summary:	Crypt::Primes - provable prime number generator suitable for cryptographic applications
+Summary(pl):	Crypt::Primes - wiarygodny generator liczb pierwszych, nadaj±cy siê do aplikacji kryptograficznych
 Name:		perl-Crypt-Primes
 Version:	0.50
 Release:	2
-License:	GPL
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	041947b9645142615d687b89cf2e1a7b
@@ -18,11 +19,29 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Crypt::Primes Perl module - Provable Prime Number Generator suitable
-for Cryptographic Applications.
+Crypt::Primes module implements in pure Perl Ueli Maurer's algorithm
+for generating large provable primes and secure parameters for
+public-key cryptosystems.  The generated primes are almost uniformly
+distributed over the set of primes of the specified bitsize and
+expected time for generation is less than the time required for
+generating a pseudo-prime of the same size with Miller-Rabin tests. 
+Detailed description and running time analysis of the algorithm can be
+found in Maurer's paper (Fast Generation of Prime Numbers and Secure
+Public-Key Cryptographic Parameters, Ueli Maurer (1994)).
 
 %description -l pl
-Modu³ Perla Crypt::Primes - wiarygodny generator liczb pierwszych,
+Modu³ Crypt::Primes jest czysto perlow± implementacj± algorytmu
+generacji du¿ych wiarygodnych liczb losowych Ueli Maurera oraz
+generacji bezpiecznych parametrów dla systemów kryptograficznych
+korzystaj±cych z klucza publicznego. Wygenerowane liczby pierwsze s±
+roz³o¿one niemal jednostajnie w zbiorze liczb pierwszych o zadanym
+rozmiarze bitowym a oczekiwany czas generacji jest krótszy ni¿ dla
+generacji liczb pseudo-pierwszych o tym samym rozmiarze za pomoc±
+testów Millera-Rabina. Szczegó³owy opis i analizy czasowe algorytmu
+mo¿na znale¼æ z artykule Maurera (Fast Generation of Prime Numbers and
+Secure Public-Key Cryptographic Parameters, Ueli Maurer (1994))
+
+- wiarygodny generator liczb pierwszych,
 nadaj±cy siê dla aplikacji kryptograficznych.
 
 %prep
