@@ -30,7 +30,7 @@ nadaj±cy siê dla aplikacji kryptograficznych.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 %install
