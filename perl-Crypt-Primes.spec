@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Crypt
 %define		pnam	Primes
-Summary:	Crypt-Primes perl module
-Summary(pl):	Modu³ perla Crypt-Primes
+Summary:	Crypt::Primes perl module
+Summary(pl):	Modu³ perla Crypt::Primes
 Name:		perl-Crypt-Primes
 Version:	0.49
 Release:	1
@@ -15,10 +15,10 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Crypt-Primes perl module.
+Crypt::Primes perl module.
 
 %description -l pl
-Modu³ perla Crypt-Primes.
+Modu³ perla Crypt::Primes.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
