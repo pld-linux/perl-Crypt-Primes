@@ -9,7 +9,7 @@ Summary:	Crypt::Primes - provable prime number generator suitable for cryptograp
 Summary(pl):	Crypt::Primes - wiarygodny generator liczb pierwszych, nadaj±cy siê do aplikacji kryptograficznych
 Name:		perl-Crypt-Primes
 Version:	0.50
-Release:	2
+Release:	3
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
