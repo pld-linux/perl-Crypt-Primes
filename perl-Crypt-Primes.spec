@@ -4,8 +4,8 @@
 Summary:	Crypt::Primes perl module
 Summary(pl):	Modu³ perla Crypt::Primes
 Name:		perl-Crypt-Primes
-Version:	0.49
-Release:	2
+Version:	0.50
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
