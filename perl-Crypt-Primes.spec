@@ -5,14 +5,14 @@ Summary:	Crypt::Primes perl module
 Summary(pl):	Modu³ perla Crypt::Primes
 Name:		perl-Crypt-Primes
 Version:	0.50
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl >= 5.6.1
 BuildRequires:	perl-Crypt-Random >= 0.33
 BuildRequires:	perl-Math-Pari >= 2.001804
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.0.2-104
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
