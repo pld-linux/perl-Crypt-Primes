@@ -6,7 +6,7 @@
 %define		pdir	Crypt
 %define		pnam	Primes
 Summary:	Crypt::Primes - provable prime number generator suitable for cryptographic applications
-Summary(pl):	Crypt::Primes - wiarygodny generator liczb pierwszych, nadaj±cy siê do aplikacji kryptograficznych
+Summary(pl.UTF-8):   Crypt::Primes - wiarygodny generator liczb pierwszych, nadajÄ…cy siÄ™ do aplikacji kryptograficznych
 Name:		perl-Crypt-Primes
 Version:	0.50
 Release:	3
@@ -33,20 +33,20 @@ Detailed description and running time analysis of the algorithm can be
 found in Maurer's paper (Fast Generation of Prime Numbers and Secure
 Public-Key Cryptographic Parameters, Ueli Maurer (1994)).
 
-%description -l pl
-Modu³ Crypt::Primes jest czysto perlow± implementacj± algorytmu
-generacji du¿ych wiarygodnych liczb losowych Ueli Maurera oraz
-generacji bezpiecznych parametrów dla systemów kryptograficznych
-korzystaj±cych z klucza publicznego. Wygenerowane liczby pierwsze s±
-roz³o¿one niemal jednostajnie w zbiorze liczb pierwszych o zadanym
-rozmiarze bitowym a oczekiwany czas generacji jest krótszy ni¿ dla
-generacji liczb pseudo-pierwszych o tym samym rozmiarze za pomoc±
-testów Millera-Rabina. Szczegó³owy opis i analizy czasowe algorytmu
-mo¿na znale¼æ z artykule Maurera (Fast Generation of Prime Numbers and
+%description -l pl.UTF-8
+ModuÅ‚ Crypt::Primes jest czysto perlowÄ… implementacjÄ… algorytmu
+generacji duÅ¼ych wiarygodnych liczb losowych Ueli Maurera oraz
+generacji bezpiecznych parametrÃ³w dla systemÃ³w kryptograficznych
+korzystajÄ…cych z klucza publicznego. Wygenerowane liczby pierwsze sÄ…
+rozÅ‚oÅ¼one niemal jednostajnie w zbiorze liczb pierwszych o zadanym
+rozmiarze bitowym a oczekiwany czas generacji jest krÃ³tszy niÅ¼ dla
+generacji liczb pseudo-pierwszych o tym samym rozmiarze za pomocÄ…
+testÃ³w Millera-Rabina. SzczegÃ³Å‚owy opis i analizy czasowe algorytmu
+moÅ¼na znaleÅºÄ‡ z artykule Maurera (Fast Generation of Prime Numbers and
 Secure Public-Key Cryptographic Parameters, Ueli Maurer (1994))
 
 - wiarygodny generator liczb pierwszych,
-nadaj±cy siê dla aplikacji kryptograficznych.
+nadajÄ…cy siÄ™ dla aplikacji kryptograficznych.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
