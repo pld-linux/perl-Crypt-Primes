@@ -6,7 +6,7 @@
 %define		pdir	Crypt
 %define		pnam	Primes
 Summary:	Crypt::Primes - provable prime number generator suitable for cryptographic applications
-Summary(pl.UTF-8):   Crypt::Primes - wiarygodny generator liczb pierwszych, nadający się do aplikacji kryptograficznych
+Summary(pl.UTF-8):	Crypt::Primes - wiarygodny generator liczb pierwszych, nadający się do aplikacji kryptograficznych
 Name:		perl-Crypt-Primes
 Version:	0.50
 Release:	3
