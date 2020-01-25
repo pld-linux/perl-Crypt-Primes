@@ -4,7 +4,6 @@
 
 %define		pdir	Crypt
 %define		pnam	Primes
-%include	/usr/lib/rpm/macros.perl
 Summary:	Crypt::Primes - provable prime number generator suitable for cryptographic applications
 Summary(pl.UTF-8):	Crypt::Primes - wiarygodny generator liczb pierwszych, nadający się do aplikacji kryptograficznych
 Name:		perl-Crypt-Primes
