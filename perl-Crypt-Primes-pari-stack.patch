@@ -1,0 +1,26 @@
+Test-only: isprime() proof of 1024-bit primes overflows the default 4 MB PARI stack.
+
+diff -urN a/t/genprime_elgamal.t b/t/genprime_elgamal.t
+--- a/t/genprime_elgamal.t	2025-01-25 14:13:42.000000000 +0100
++++ b/t/genprime_elgamal.t	2026-11-21 00:03:04.873109484 +0100
+@@ -10,6 +10,8 @@
+ 
+ use Crypt::Primes; 
+ use Math::Pari qw(floor);
++# isprime() proof of a 1024-bit prime needs more than the default 4 MB PARI stack
++Math::Pari::allocatemem(64_000_000);
+ 
+ print "1..10\n";
+ 
+diff -urN a/t/genprime.t b/t/genprime.t
+--- a/t/genprime.t	2025-01-25 14:13:42.000000000 +0100
++++ b/t/genprime.t	2026-11-21 00:03:04.872662834 +0100
+@@ -10,6 +10,8 @@
+ 
+ use Crypt::Primes qw(maurer); 
+ use Math::Pari qw(floor);
++# isprime() proof of a 1024-bit prime needs more than the default 4 MB PARI stack
++Math::Pari::allocatemem(64_000_000);
+ 
+ print "1..10\n";
+ 

@@ -7,13 +7,14 @@
 Summary:	Crypt::Primes - provable prime number generator suitable for cryptographic applications
 Summary(pl.UTF-8):	Crypt::Primes - wiarygodny generator liczb pierwszych, nadający się do aplikacji kryptograficznych
 Name:		perl-Crypt-Primes
-Version:	0.50
-Release:	6
+Version:	0.52
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	041947b9645142615d687b89cf2e1a7b
+Source0:	https://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	0cdd30e9342b61d122f7f19663a54871
+Patch0:		%{name}-pari-stack.patch
 URL:		http://search.cpan.org/dist/Crypt-Primes/
 BuildRequires:	perl-Crypt-Random >= 0.33
 BuildRequires:	perl-Math-Pari >= 2.001804
@@ -50,6 +51,7 @@ Secure Public-Key Cryptographic Parameters, Ueli Maurer (1994))
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
+%patch -P0 -p1
 
 %build
 %{__perl} Makefile.PL \
